@@ -2,9 +2,9 @@ import cv2      					        # import OpenCv lib
 cap = cv2.VideoCapture(0)            	    # create cap object 
 
 # set the format into MJPG in the FourCC format 
-cap.set(cv2.CAP_PROP_FOURCC,cv2.VideoWriter_fourcc('M','J','P','G'))
+# cap.set(cv2.CAP_PROP_FOURCC,cv2.VideoWriter_fourcc('M','J','P','G'))
 
-# cap.set(cv2.CAP_PROP_FOURCC,cv2.VideoWriter_fourcc('J','P','E','G'))
+cap.set(cv2.CAP_PROP_FOURCC,cv2.VideoWriter_fourcc('J','P','E','G'))
 
 
 if not cap.isOpened():                     	# check if the camera is opened
